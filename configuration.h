@@ -11,8 +11,6 @@
 #define RADIO_DIO1                                      2           /*!< PD2 */
 #define RADIO_BUSY                                      6           /*!< PD6 */
 #define RADIO_NRST                                      RADIOLIB_NC /*!< Not connected*/
-agsdklnasdlkmibhksdfb
-
 
 
 #define LORA_CARRIER_FREQUENCY                          433         /*!< MHz */
@@ -26,7 +24,6 @@ agsdklnasdlkmibhksdfb
 #define LORA_GAIN                                       1.6
 
 
-
 extern volatile bool interruptsEnabled;                             /*!< Flag to signal interrupts enabled/disabled. */
 extern volatile bool dataReceived;                                  /*!< Flag to signal data was received from ISR. */
 extern uint8_t currentModem;                                        /*!< Current modem configuration. */
@@ -37,6 +34,7 @@ extern SX1278 radio;                                                /*!< SX1268 
 extern MorseClient morse;                                           /*!< MorseClient object. */
 extern const char* password;										                    /*!< Transmission password (AES). */
 extern const uint8_t encryptionKey[];								                /*!< Encryption key (AES). */
+
 
 //GPS Variables
 extern byte Type[4];
