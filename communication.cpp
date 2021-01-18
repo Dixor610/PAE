@@ -476,9 +476,7 @@ void Communication_Execute_Function(uint8_t functionId, uint8_t* optData, size_t
         memcpy(destination, optDataPtr, sizeof(destination));
         if( destination != 255 ){
           cancel_Retransmission = true;
-        } else {
-          cancel_Retransmission = false;
-        }
+        } 
         (*optDataPtr) += sizeof(destination);
         
         memcpy(N_nodes, optDataPtr, sizeof(N_nodes));
